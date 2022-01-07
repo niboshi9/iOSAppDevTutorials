@@ -18,6 +18,7 @@
 		BA67BC832786E748007C6501 /* test.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA67BC822786E748007C6501 /* test.xib */; };
 		BA67BC862787C6A4007C6501 /* ReminderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67BC852787C6A4007C6501 /* ReminderListCell.swift */; };
 		D0781507278716FE009911C9 /* ReminderListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0781506278716FE009911C9 /* ReminderListCell.xib */; };
+		D0A6D3472788770E00786003 /* ReminderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A6D3462788770E00786003 /* ReminderDetail.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BA67BC822786E748007C6501 /* test.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = test.xib; sourceTree = "<group>"; };
 		BA67BC852787C6A4007C6501 /* ReminderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListCell.swift; sourceTree = "<group>"; };
 		D0781506278716FE009911C9 /* ReminderListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderListCell.xib; sourceTree = "<group>"; };
+		D0A6D3462788770E00786003 /* ReminderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReminderDetail.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				BA67BC6D27866571007C6501 /* Main.storyboard */,
 				BA67BC6B27866571007C6501 /* ReminderListViewController.swift */,
+				D0A6D3462788770E00786003 /* ReminderDetail.storyboard */,
 				BA3602222788267700D1C899 /* ReminderDetailViewController.swift.swift */,
 			);
 			path = ViewController;
@@ -159,6 +162,7 @@
 				BA67BC7427866573007C6501 /* LaunchScreen.storyboard in Resources */,
 				D0781507278716FE009911C9 /* ReminderListCell.xib in Resources */,
 				BA67BC832786E748007C6501 /* test.xib in Resources */,
+				D0A6D3472788770E00786003 /* ReminderDetail.storyboard in Resources */,
 				BA67BC7127866573007C6501 /* Assets.xcassets in Resources */,
 				BA67BC6F27866571007C6501 /* Main.storyboard in Resources */,
 			);
@@ -333,6 +337,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,6 +366,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

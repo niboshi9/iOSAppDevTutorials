@@ -49,7 +49,16 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
             Reminder.testData[indexPath.row].isComplete.toggle()
             tableView.reloadRows(at: [indexPath], with: .none)
         }
+        
+        // cellの右側に表示させる矢印みたいなの。IBでUITableViewCell使ってないからコードで設定するしかなかった
+        cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
+        
         return cell
+    }
+    
+    // segueの設定 UITableViewCell使ってないから、コードで設定。
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "ShowReminderDetailSegue", sender: tableView.cellForRow(at: indexPath))
     }
 
 }
