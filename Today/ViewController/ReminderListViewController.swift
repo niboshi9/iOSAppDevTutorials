@@ -56,10 +56,27 @@ class ReminderListViewController: UIViewController, UITableViewDelegate, UITable
         return cell
     }
     
-    // segueの設定 UITableViewCell使ってないから、コードで設定。
+    static let showDetailSegueIdentifier = "ShowReminderDetailSegue"
+    
+    
+    // セル押したときにすること
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // segueの設定と、senderでセルの情報を渡してる
         performSegue(withIdentifier: "ShowReminderDetailSegue", sender: tableView.cellForRow(at: indexPath))
+        tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    // prepareはsegue遷移前に呼ばれる。
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == Self.showDetailSegueIdentifier,
+               // reminderDetailViewのインスタンス？
+               let destination = segue.destination as? ReminderDetailViewController,
+               let cell = sender as? UITableViewCell,
+               let indexPath = tableView.indexPath(for: cell) {
+                let reminder = Reminder.testData[indexPath.row]
+                destination.configure(with: reminder)
+            }
+        }
 
 }
 

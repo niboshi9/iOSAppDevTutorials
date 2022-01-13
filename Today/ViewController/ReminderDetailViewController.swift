@@ -4,16 +4,19 @@ import UIKit
 // それと
 class ReminderDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    static let reminderDetailCellIdentifier = "ReminderDetailCell"
+//    static let reminderDetailCellIdentifier = "ReminderDetailCell"
     
-    @IBOutlet weak var detailTableView: UITableView! {
-        didSet {
-            
-            detailTableView.dataSource = self
-            detailTableView.delegate = self
-        }
+//    @IBOutlet weak var detailTableView: UITableView! {
+//        didSet {
+//
+//            detailTableView.dataSource = self
+//            detailTableView.delegate = self
+//        }
+//    }
+    
+    override func viewDidLoad() {
+        self.navigationItem.title = "View Reminder"
     }
-    
     
     
     
@@ -60,6 +63,7 @@ class ReminderDetailViewController: UIViewController, UITableViewDelegate, UITab
 
 // TableViewの設定
 extension ReminderDetailViewController {
+    static let reminderDetailCellIdentifier = "ReminderDetailCell"
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

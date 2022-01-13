@@ -21,7 +21,6 @@
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZM-3V-rdK">
                                     <rect key="frame" x="0.0" y="0.0" width="44" height="8"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="8" id="NmG-c5-DJh"/>
                                     </constraints>
@@ -39,7 +38,6 @@
                                 </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SsD-yd-pde">
                                     <rect key="frame" x="0.0" y="52" width="44" height="8"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="8" id="hn0-r4-pm1"/>
                                     </constraints>

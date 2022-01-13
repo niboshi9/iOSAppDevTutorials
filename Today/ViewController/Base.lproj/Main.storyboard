@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="921.73913043478262" y="135.9375"/>
         </scene>
-        <!--ReminderDetailViewController-->
+        <!--ReminderDetail-->
         <scene sceneID="kP0-Zp-6xC">
             <objects>
-                <viewControllerPlaceholder storyboardName="ReminderDetailViewController" id="izU-tj-e39" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ReminderDetail" id="izU-tj-e39" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="a0f-pk-KXo"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fv1-l5-iyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
