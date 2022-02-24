@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA0E11FE27C7C6E000FAC909 /* ReminderListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E11FD27C7C6E000FAC909 /* ReminderListDataSource.swift */; };
 		BA3602232788267700D1C899 /* ReminderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3602222788267700D1C899 /* ReminderDetailViewController.swift */; };
 		BA67BC6827866571007C6501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67BC6727866571007C6501 /* AppDelegate.swift */; };
 		BA67BC6A27866571007C6501 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA67BC6927866571007C6501 /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA0E11FD27C7C6E000FAC909 /* ReminderListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListDataSource.swift; sourceTree = "<group>"; };
 		BA3602222788267700D1C899 /* ReminderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailViewController.swift; sourceTree = "<group>"; };
 		BA67BC6427866571007C6501 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA67BC6727866571007C6501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		BA67BC6627866571007C6501 /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				BA0E11FD27C7C6E000FAC909 /* ReminderListDataSource.swift */,
 				BA67BC6727866571007C6501 /* AppDelegate.swift */,
 				BA67BC6927866571007C6501 /* SceneDelegate.swift */,
 				BA67BC7D2786E66B007C6501 /* ViewController */,
@@ -186,6 +189,7 @@
 				BA67BC6C27866571007C6501 /* ReminderListViewController.swift in Sources */,
 				BA67BC862787C6A4007C6501 /* ReminderListCell.swift in Sources */,
 				BA67BC6827866571007C6501 /* AppDelegate.swift in Sources */,
+				BA0E11FE27C7C6E000FAC909 /* ReminderListDataSource.swift in Sources */,
 				D0B31D88278FC2CC00D59146 /* ReminderDetailCell.swift in Sources */,
 				BA67BC6A27866571007C6501 /* SceneDelegate.swift in Sources */,
 				BA67BC7C2786E462007C6501 /* Reminder.swift in Sources */,
