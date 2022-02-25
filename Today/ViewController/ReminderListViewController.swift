@@ -9,20 +9,24 @@ import UIKit
 
 class ReminderListViewController: UIViewController, UITableViewDelegate {
     
+    private var reminderListDataSource: ReminderListDataSource?
+    
     private let cellClassName = "ReminderListCell"
-    private let reuseId = "ReminderListCell"
+//    ReminderListDataSourceでも出てくるから、privateじゃなくした。
+    static let reuseId = "ReminderListCell"
     
     private var reminders: [Reminder] = []
     
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             let cellNib = UINib(nibName: cellClassName, bundle: nil)
-            tableView.register(cellNib, forCellReuseIdentifier: reuseId)
+            tableView.register(cellNib, forCellReuseIdentifier: ReminderListViewController.reuseId)
 //            print(Reminder.testData.count)
             
-//            tableViewDataSourceの切り分けがうまくできない！
-            tableView.dataSource = self.ReminderListDataSource
-            tableView.delegate = self
+//            tableViewDataSourceの切り分けがうまくできない！→できた！
+//            インスタンスを作成して、dataSourceプロパティに代入
+            reminderListDataSource = ReminderListDataSource()
+            tableView.dataSource = reminderListDataSource
         }
     }
     
